@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark:         #121212;        /* Fondo general del body */
+  --color-light:      #F5F5F5;        /* Texto principal y enlaces */
+  --color-accent-green:    #00ff99;        /* Hover y enlaces activos */
+  --color-muted:      #c2c0c0;        /* Texto más tenue - sección sobre mí */
+  --color-border-green:    #28a745;        /* Borde etiquetas sobre mí */
+  --color-edu-turquoise:   #0bceaf;        /* Educación - títulos */
+}
+
+html {
+  scroll-behavior: smooth; /*scroll suave*/
+}
