@@ -1,32 +1,34 @@
 export default function ProjectSectionHome() {
-  // Datos de las cards
   const cardsData = [
     {
-      img: "../imgs/Chabell.webp",
+      img: "imgs/Chabell.webp",
       title: "Chabell",
-      lenguajes: ["PHP", "Laravel", "MySQL","CSS"],
+      lenguajes: ["PHP", "Laravel", "MySQL", "CSS"],
       link: "https://github.com/lKeViNl04/Chabell",
     },
     {
-      img: "../imgs/Yenny.webp",
+      img: "imgs/Yenny.webp",
       title: "Yenny-Elateneo",
       lenguajes: ["React", "Tailwind", "MySQL", "Python"],
       link: "https://github.com/lKeViNl04/YENNY",
     },
     {
-      img: "../imgs/Pokevici.webp",
+      img: "imgs/Pokevici.webp",
       title: "Pokevici",
-      lenguajes: ["Java", "MySQL", "Swing con FlatLaf"],
+      lenguajes: ["Java", "MySQL", "Swing with FlatLaf"],
       link: "https://github.com/lKeViNl04/TP_ProgAvanz",
     },
   ];
 
   return (
-    <section id="project" className="bg-[url('../imgs/bg-project.png')] bg-cover bg-no-repeat bg-center">
+    <section
+      id="project"
+      className="bg-[url('/portafolio/imgs/bg-project.webp')] bg-cover bg-no-repeat bg-center"
+    >
       <div className="min-h-screen bg-black/50 py-10">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-start">
-            <h1 className="text-5xl font-bold text-white">Projects Personal</h1>
+            <h1 className="text-5xl font-bold text-white">Personal Projects</h1>
             <div className="max-w-7xl px-4 pt-8 flex flex-col items-center ">
               <div className="pt-10 flex flex-wrap gap-6 justify-center">
                 {cardsData.map((card, index) => (
@@ -61,8 +63,8 @@ function CardProject({ img, title, lenguajes, link }) {
         <div className="group relative m-0 flex h-50 sm:max-w-lg rounded-xl shadow-xl ring-gray-900/5">
           <div className="z-10 h-full w-full overflow-hidden rounded-xl border border-gray-200 opacity-80 transition duration-300 ease-in-out group-hover:opacity-100 dark:border-gray-700 dark:opacity-90">
             <img
-              src={img}
-              alt=""
+              src={`${import.meta.env.BASE_URL + img}`}
+              alt={title}
               className="block h-full w-full transform scale-100 object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"
             />
           </div>

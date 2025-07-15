@@ -33,7 +33,7 @@ export default function Header() {
                             }`}
                     >
                         <svg className="w-12 h-12 fill-white hover:fill-accent-green">
-                            <use href="/icons/sprite.svg#BurguerMenu" />
+                            <use href={`${import.meta.env.BASE_URL}icons/sprite.svg#BurguerMenu`}/>
                         </svg>
                     </button>
                     <button
@@ -45,7 +45,7 @@ export default function Header() {
                             }`}
                     >
                         <svg className="w-8 h-8 fill-red-600">
-                            <use href="/icons/sprite.svg#Equis" />
+                            <use href={`${import.meta.env.BASE_URL}icons/sprite.svg#Equis`}/>
                         </svg>
                     </button>
                 </div>

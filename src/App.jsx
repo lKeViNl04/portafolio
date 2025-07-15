@@ -6,7 +6,7 @@ import E404 from "./pages/Error";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portafolio">
       <Header />
       <Routes>
         <Route path="/" element={<Home/>} />

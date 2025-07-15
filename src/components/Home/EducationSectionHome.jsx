@@ -5,7 +5,7 @@ export default function EducationSectionHome() {
   institution: "Da Vinci",
   dateRange: "2024/08/17 -- En Curso",
   description:
-    "Desarrollando habilidades en programación backend y frontend, bases de datos y arquitectura de software.",
+    "Developing skills in backend and frontend programming, databases, and software architecture.",
   },];
   return (
     <section id="education">

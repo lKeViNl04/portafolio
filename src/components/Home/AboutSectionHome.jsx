@@ -9,12 +9,12 @@ export default function AboutSectionHome() {
       skills: ["Php", "Laravel", "Python", "Java", "MySQL"],
     },
     {
-      name: "Herramientas",
+      name: "Tools",
       skills: ["VSCode", "IntelliJ IDEA"],
     },
     {
-      name: "Habilidades blandas",
-      skills: ["Comunicación", "Trabajo en equipo", "Creatividad"],
+      name: "Soft skills",
+      skills: ["Communication", "Teamwork", "Creativity"],
     },
   ];
   return (
@@ -24,9 +24,9 @@ export default function AboutSectionHome() {
           <div className="sm:w-1/2 px-4">
             <h2 className="text-5xl font-bold text-white mb-4">About me</h2>
             <p className="text-xl text-muted mb-6">
-              Soy un desarrollador web en formación y estudiante de Analista de
-              Sistemas, apasionado por la tecnología y el desarrollo de
-              software. Tengo conocimientos en:
+              I'm a web developer in training and a Systems Analyst student,
+              passionate about technology and software development. I have
+              experience in:
             </p>
             {skillGroups.map((group) => (
               <div key={group.name} className="mb-4">
@@ -47,7 +47,7 @@ export default function AboutSectionHome() {
           <div className="sm:w-1/2 px-4 mb-8 sm:mb-0 flex justify-center">
             <div className="overflow-hidden w-full">
               <img
-                src="/imgs/Caricatura.png"
+                src={`${import.meta.env.BASE_URL}imgs/Caricatura.webp`}
                 alt="Caricatura"
                 className="w-full h-auto object-contain"
               />
