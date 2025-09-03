@@ -1,18 +1,15 @@
+import { useTranslation } from "react-i18next";
 export default function EducationSectionHome() {
-  const education = [{
-  title: "Analista de Sistemas",
-  link: "https://davinci.edu.ar/",
-  institution: "Da Vinci",
-  dateRange: "2024/08/17 -- En Curso",
-  description:
-    "Developing skills in backend and frontend programming, databases, and software architecture.",
-  },];
+  const { t } = useTranslation();
+
+  const education = t("education.items", { returnObjects: true });
+
   return (
     <section id="education">
       <div className="container mx-auto px-4">
         <div className="flex flex-col sm:flex-row gap-8 py-10 items-start">
           <div className="sm:w-1/2">
-            <h3 className="text-5xl font-bold text-white mb-4">Education</h3>
+            <h3 className="text-5xl font-bold text-white mb-4">{t("education.title")}</h3>
             <div className="space-y-6">
               {education.map((edu, index) => (
                 <Card
@@ -28,7 +25,7 @@ export default function EducationSectionHome() {
           </div>
 
           <div className="sm:w-1/2">
-            <h3 className="text-5xl font-bold text-white mb-4">Experience</h3>
+            <h3 className="text-5xl font-bold text-white mb-4">{t("experience.title")}</h3>
             <div></div>
           </div>
         </div>

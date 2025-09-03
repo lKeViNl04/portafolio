@@ -1,15 +1,18 @@
+import { useTranslation } from "react-i18next";
 export default function ProjectSectionHome() {
+  const { t } = useTranslation();
+
   const cardsData = [
     {
       img: "imgs/Chabell.webp",
       title: "Chabell",
-      lenguajes: ["PHP", "Laravel", "MySQL", "CSS"],
+      lenguajes: ["PHP", "Laravel","Blade", "MySQL", "CSS","Bootstrap"],
       link: "https://github.com/lKeViNl04/Chabell",
     },
     {
       img: "imgs/Yenny.webp",
       title: "Yenny-Elateneo",
-      lenguajes: ["React", "Tailwind", "MySQL", "Python"],
+      lenguajes: ["React", "JavaScript","TailwindCSS", "SQLite", "Python","Flask"],
       link: "https://github.com/lKeViNl04/YENNY",
     },
     {
@@ -18,6 +21,18 @@ export default function ProjectSectionHome() {
       lenguajes: ["Java", "MySQL", "Swing with FlatLaf"],
       link: "https://github.com/lKeViNl04/TP_ProgAvanz",
     },
+    {
+      img: "imgs/Yenny_app.webp",
+      title: "Yenny(App)",
+      lenguajes: ["Java", "Supabase(PostgreSQL)", "Kotlin"],
+      link: "https://github.com/lKeViNl04/Mobile-YennyElAteneo",
+    },
+    {
+      img: "imgs/Thegreatdream.webp",
+      title: "The Great Dream",
+      lenguajes: ["Java","Spring Boot", "Angular", "TypeScript","TailwindCSS","MySQL"],
+      link: "https://github.com/lKeViNl04/TheGreatDreamFrontend",
+    }
   ];
 
   return (
@@ -28,7 +43,7 @@ export default function ProjectSectionHome() {
       <div className="min-h-screen bg-black/50 py-10">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-start">
-            <h1 className="text-5xl font-bold text-white">Personal Projects</h1>
+            <h1 className="text-5xl font-bold text-white">{t("projects.title")}</h1>
             <div className="max-w-7xl px-4 pt-8 flex flex-col items-center ">
               <div className="pt-10 flex flex-wrap gap-6 justify-center">
                 {cardsData.map((card, index) => (

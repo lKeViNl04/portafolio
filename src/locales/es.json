@@ -1,0 +1,42 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "project": "Proyectos",
+        "education": "Educación"
+    },
+    "hero": {
+    "download": "Descargar CV",
+    "downloadCV": "KevinFlores_CV_ES.pdf",
+    "role": "Desarrollador Junior"
+    },
+    "about": {
+        "title": "Sobre mí",
+        "description": "Soy desarrollador web en formación y estudiante de Analista de Sistemas, apasionado por la tecnología y el desarrollo de software. Tengo experiencia en:",
+        "skillGroups": {
+        "Frontend": ["Html5", "Css", "Bootstrap", "TailwindCss", "JavaScript", "TypeScript", "React", "Angular"],
+        "Backend": ["Php+Laravel", "Python+Flask", "Java+SpringBoot"],
+        "Database": ["MySQL", "SQLite", "PostgreSQL+Supabase"],
+        "Tools": ["VSCode", "IntelliJ IDEA", "Postman", "Github", "Git", "Trello"],
+        "SoftSkills": ["Comunicación", "Trabajo en equipo", "Creatividad"]
+        }
+    },
+    "projects": {
+    "title": "Proyectos Personales"
+    },
+    "education": {
+        "title": "Educación",
+        "items": [
+        {
+            "title": "Analista de Sistemas",
+            "institution": "Da Vinci",
+            "link": "https://davinci.edu.ar/",
+            "dateRange": "2023/08/17 -- En Curso",
+            "description": "Desarrollando habilidades en programación backend y frontend, bases de datos y arquitectura de software."
+        }
+        ]
+    },
+    "experience":{
+        "title": "Experiencia"
+    }
+}
