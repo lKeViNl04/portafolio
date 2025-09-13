@@ -13,7 +13,7 @@ export default function AboutSectionHome() {
   return (
     <section id="about" className="py-5">
       <div className="container mx-auto">
-        <div className="flex flex-col-reverse sm:flex-row items-start">
+        <div className="flex flex-col-reverse sm:flex-row items-start sm:items-center">
           <div className="sm:w-1/2 px-4">
             <h2 className="text-5xl font-bold text-white mb-4">{t("about.title")}</h2>
             <p className="text-xl text-muted mb-6">{t("about.description")}</p>
@@ -32,10 +32,10 @@ export default function AboutSectionHome() {
               </div>
             ))}
           </div>
-          <div className="sm:w-1/2 px-4 mb-8 sm:mb-0 flex justify-center">
-            <div className="overflow-hidden w-full">
+          <div className="sm:w-1/2 px-4 mb-8 sm:mb-0">
+            <div className="overflow-hidden w-full" >
               <img
-                src={`${import.meta.env.BASE_URL}imgs/Caricatura.webp`}
+                src={`${import.meta.env.BASE_URL}imgs/CaricaturaKevin.webp`}
                 alt="Caricatura"
                 className="w-full h-auto object-contain"
               />

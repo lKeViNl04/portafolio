@@ -37,6 +37,15 @@
         ]
     },
     "experience":{
-        "title": "Experiencia"
+        "title": "Experiencia",
+        "items": [
+            {
+            "title": "Iniciando mi trayectoria profesional",
+            "institution": "Activamente",
+            "link": "https://www.linkedin.com/in/kevin-flores-153132320/",
+            "dateRange": "2025 -- Actualidad",
+            "description": "Desarrollando proyectos personales mientras busco mi primera oportunidad profesional."
+            }
+        ]
     }
 }

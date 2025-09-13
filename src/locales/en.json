@@ -6,37 +6,74 @@
         "education": "Education"
     },
     "hero": {
-    "download": "Download CV",
-    "downloadCV": "KevinFlores_CV_EN.pdf",
-    "role": "Junior Developer"
+        "download": "Download CV",
+        "downloadCV": "KevinFlores_CV_EN.pdf",
+        "role": "Junior Developer"
     },
     "about": {
         "title": "About me",
         "description": "I'm a web developer in training and a Systems Analyst student, passionate about technology and software development. I have experience in:",
         "skillGroups": {
-        "Frontend": ["Html5", "Css", "Bootstrap", "TailwindCss", "JavaScript", "TypeScript", "React", "Angular"],
-        "Backend": ["Php+Laravel", "Python+Flask", "Java+SpringBoot"],
-        "Database": ["MySQL", "SQLite", "PostgreSQL+Supabase"],
-        "Tools": ["VSCode", "IntelliJ IDEA", "Postman", "Github", "Git", "Trello"],
-        "SoftSkills": ["Communication", "Teamwork", "Creativity"]
+            "Frontend": [
+                "Html5",
+                "Css",
+                "Bootstrap",
+                "TailwindCss",
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "Angular"
+            ],
+            "Backend": [
+                "Php+Laravel",
+                "Python+Flask",
+                "Java+SpringBoot"
+            ],
+            "Database": [
+                "MySQL",
+                "SQLite",
+                "PostgreSQL+Supabase"
+            ],
+            "Tools": [
+                "VSCode",
+                "IntelliJ IDEA",
+                "Postman",
+                "Github",
+                "Git",
+                "Trello"
+            ],
+            "SoftSkills": [
+                "Communication",
+                "Teamwork",
+                "Creativity"
+            ]
         }
     },
     "projects": {
-    "title": "Personal Projects"
+        "title": "Personal Projects"
     },
     "education": {
-    "title": "Education",
-    "items": [
-        {
-            "title": "Systems Analyst",
-            "institution": "Da Vinci",
-            "link": "https://davinci.edu.ar/",
-            "dateRange": "2023/08/17 -- In Progress",
-            "description": "Developing skills in backend and frontend programming, databases, and software architecture."
-        }
+        "title": "Education",
+        "items": [
+            {
+                "title": "Systems Analyst",
+                "institution": "Da Vinci",
+                "link": "https://davinci.edu.ar/",
+                "dateRange": "2023/08/17 -- In Progress",
+                "description": "Developing skills in backend and frontend programming, databases, and software architecture."
+            }
         ]
     },
-    "experience":{
-        "title": "Experience"
+    "experience": {
+        "title": "Experience",
+        "items": [
+            {
+                "title": "Starting My Professional Journey",
+                "institution": "Actively",
+                "link": "https://www.linkedin.com/in/kevin-flores-153132320/",
+                "dateRange": "2025 -- Present",
+                "description": "Developing personal projects while seeking my first professional opportunity."
+            }
+        ]
     }
 }

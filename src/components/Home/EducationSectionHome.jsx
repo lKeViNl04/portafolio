@@ -3,6 +3,7 @@ export default function EducationSectionHome() {
   const { t } = useTranslation();
 
   const education = t("education.items", { returnObjects: true });
+  const experience = t("experience.items", { returnObjects: true });
 
   return (
     <section id="education">
@@ -26,7 +27,18 @@ export default function EducationSectionHome() {
 
           <div className="sm:w-1/2">
             <h3 className="text-5xl font-bold text-white mb-4">{t("experience.title")}</h3>
-            <div></div>
+            <div className="space-y-6">
+              {experience.map((edu, index) => (
+                <Card
+                  key={index}
+                  title={edu.title}
+                  link={edu.link}
+                  institution={edu.institution}
+                  dateRange={edu.dateRange}
+                  description={edu.description}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
